@@ -1,3 +1,4 @@
+@mobile (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +169,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +196,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home {
+  width: 80%;
+}
+.home .content-intro {
+  width: 100%;
+  display: flex;
+  border-top: 0.3rem dashed lightgray;
 }
 .home .content-section {
   margin: 30px 0;
@@ -225,6 +251,12 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-html {
-  background-color: red;
+.home .content-pick .destination .btn {
+  border: 1px solid #17A2B8;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  background-color: #17A2B8;
+  border-radius: 1rem;
+  color: #FFFFFF;
 }
